@@ -1,0 +1,8 @@
+<div class="step-sequencer__row" id="s_<%- id %>">
+
+    <div class="step-sequencer__label"><%- name %></div>
+
+    <% _.each(pads, function($pad) { %>
+    <div class="step-sequencer__pad <% if ($pad) { %>on<% } %>"></div>
+     <% }); %>
+</div>
